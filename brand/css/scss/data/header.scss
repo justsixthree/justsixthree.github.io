@@ -1,0 +1,110 @@
+/*Header */
+header {
+    &.fixed{
+        width: 100%; 
+        top: 50px; 
+        padding: 20px 70px; 
+        color: #fff; 
+        display: flex; 
+        display: -webkit-flex; 
+        z-index: 21;
+    }
+    .nav-toggler { 
+        width: 32px; 
+        cursor: pointer; 
+        .toggler-bar { 
+            float: right;
+            width: 32px;
+            height: 4px; 
+            margin-bottom: 5px; 
+            background: #fff; 
+            border-radius: 4px; 
+            transition: all 0.3s ease-in 0s;
+            
+            &:nth-child(2){
+                width: 26px;
+            }
+            &:last-child { width: 20px; }
+        }
+        &:hover{
+            .toggler-bar:first-child { width: 20px; }
+            .toggler-bar:last-child { width: 32px; }
+        }
+
+        &.active{
+            .toggler-bar { 
+                
+                width: 50px;
+               &:first-child { transform: rotate(45deg);width: 20px;
+                position: relative;
+                bottom: -1px;
+                right: -1px;
+            }
+               
+               &:last-child { transform: rotate(-45deg);width: 20px; 
+                position: relative;
+                top: -1px;
+                right: -1px;
+             }
+            }
+        }
+    }
+}
+/*//Header */
+
+
+
+
+/*HOME NAVIGATIONS*/
+.main-wrapper { 
+    ul.navgitation-list {
+        list-style: none; 
+        font-size: 0; 
+        line-height: 0;
+        display: inline-block; 
+        margin: 0; 
+        padding: 0;
+
+
+        li { 
+            display: inline-block; 
+            a { 
+                display: block;
+                font-size: 16px;
+                color: #fff;
+                padding: 15px 20px;
+                font-weight: 300;
+                &:hover{
+                    background: rgba(0,0,0,0.2);
+                }
+            }
+
+        }
+    }
+    nav { 
+        position: fixed; 
+        bottom: 0;
+        width: 100%; 
+        text-align: center;
+        z-index: 22;
+        display: flex;
+        display: -webkit-flex;
+        
+        padding: 30px 20px;
+    }
+    // aside {
+    //     position: absolute; 
+    //     top: calc(50% - 12px); 
+    //     transform: rotate(-90deg); 
+    //     z-index: 3;
+
+    //     &.aside-left {  
+    //         left: -20px; 
+    //     }
+
+    //     &.aside-right {
+    //         right: -80px; 
+    //     }
+    // }
+}
+/*//HOME NAVIGATIONS*/

@@ -1,0 +1,133 @@
+/*Banner*/
+//banner Particles starts
+@include back_circle(700px,xl){
+    animation: rotateRound  10s ease-in-out 0s infinite alternate-reverse;
+}
+@include back_circle(600px,lg){
+    animation: rotateRound  9.5s ease-in-out 0.5s infinite alternate-reverse;
+}
+@include back_circle(500px,md){
+    animation: rotateRound  9s ease-in-out 1s infinite alternate-reverse;
+};
+@include shape(200, $blue, 'circle', 'blue'){
+    &.left { 
+    top: 33%; 
+    left: -100px; 
+    }
+    &.center {
+    top: 70%; 
+    left: 93%; 
+    }
+}
+@include shape(60, $navy, 'circle', 'navy'){
+    &.left { 
+    top: -30px; 
+    left: -30px; 
+    animation: moveLeft_to 20s linear 0s infinite;
+}
+
+    &.right { 
+    bottom: -30px; 
+    right: -30px; 
+    animation: moveRight_to 20s linear 0s infinite;
+    }
+}
+
+@include shape(60, $navy, 'rect', 'navy'){
+    &.left.blur { 
+    top: 70%; 
+    left: 100px; 
+    background: rgba(28,216,201,1); 
+    box-shadow: 0 0 40px rgba(28,216,201,1);
+    animation: aniblur 3s ease 0s infinite alternate;
+    }
+}
+//banner Particles ends
+
+.banner-box {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    .box {
+        padding: 30px;
+        border: 3px solid #fff;
+        position: relative;
+
+        &:after,&:before {
+        content: "";
+            height: 0;
+            position: absolute;
+            width: 0;
+        }
+
+        &:before{
+            top: -3px;
+            left: -3px;
+            border-top: 3px solid $navy; 
+            border-right: 3px solid $navy; 
+            animation:  box_widthLeft_to 10s linear 0s infinite alternate-reverse;
+        }
+
+        &:after{
+            bottom: -3px;
+            right: -3px;
+            border-bottom: 3px solid $navy; 
+            border-left: 3px solid $navy; 
+            animation:  box_widthLeft_to 10s linear 0s infinite alternate-reverse;
+
+        }
+    }
+
+    .square-navy {
+        top: -26px; 
+        left: -24px; 
+        // animation: box_moveLeft_to 10s linear 0s infinite alternate-reverse; 
+
+    }
+
+    .circle-navy {
+        bottom: -30px; 
+        right: 0; 
+        // animation:  box_moveRight_to 10s linear 0s infinite alternate-reverse;
+    }
+
+
+    h1 {
+        font-size: 64px;
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        
+        // &:before{
+        //     display: block;
+        //     white-space: pre;
+        //     content: " ";
+        //     animation: change_text 20s linear 0s infinite alternate;
+        //     width: 0%;
+        //     overflow: hidden;
+        //     border-right: 3px solid $navy;
+        // }
+        
+    }
+    
+
+    img {
+        position: absolute;
+        bottom: -60px;
+        right: -110px;
+    }
+
+    .random-circle {
+        width: 320px;
+        height: 280px;
+        background-color: #fff;
+        border-radius: 300px 220px 220px 150px;
+        position: absolute;
+        bottom: -50px;
+        right: -100px;
+        animation: randomRadius 2s linear 0s infinite alternate;
+    }
+}
+
+/*//Banner*/
+
