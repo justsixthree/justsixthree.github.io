@@ -23,13 +23,13 @@
     &.left { 
     top: -30px; 
     left: -30px; 
-    animation: moveLeft_to 20s linear 0s infinite;
+    // animation: moveLeft_to 20s linear 0s infinite;
 }
 
     &.right { 
     bottom: -30px; 
     right: -30px; 
-    animation: moveRight_to 20s linear 0s infinite;
+    // animation: moveRight_to 20s linear 0s infinite;
     }
 }
 
@@ -97,6 +97,7 @@
         color: #fff;
         overflow: hidden;
         position: relative;
+        font-weight: 700;
         
         // &:before{
         //     display: block;

@@ -1,3 +1,7 @@
+@import url(data/css/reboot.css);
+@import url(data/css/grid.css);
+@import url(data/css/fullpage.css);
+@import url(data/css/menustyle.css);
 * {
   padding: 0;
   margin: 0;
@@ -154,13 +158,16 @@ ul li a {
   display: block;
   height: 5px;
   width: 72px;
-  margin: 10px 0 20px;
+  margin: 10px 0 30px;
   background: #00ffc6;
 }
 
 .section-des {
   max-width: 600px;
   opacity: 0.8;
+  line-height: 2;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 .section-list {
@@ -176,8 +183,8 @@ ul li a {
 }
 
 .list-title {
-  font-size: 28px;
-  font-weight: 300;
+  font-size: 24px;
+  font-weight: 600;
   color: #fff;
 }
 
@@ -409,10 +416,21 @@ header .nav-toggler.active .toggler-bar:last-child {
   font-size: 16px;
   color: #fff;
   padding: 15px 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .main-wrapper ul.navgitation-list li a:hover {
   background: rgba(0, 0, 0, 0.2);
+}
+.main-wrapper ul.navgitation-list li a.quick-message {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  line-height: 54px;
+  padding: 0;
+  font-size: 20px;
+  border-radius: 10%;
+  border: 3px solid #00ffc6;
 }
 .main-wrapper nav {
   position: fixed;
@@ -479,10 +497,9 @@ header .nav-toggler.active .toggler-bar:last-child {
   position: absolute;
   top: calc(50% - 350px);
   left: calc(50% - 350px);
-  /*animation: rotateRound  10s ease-in-out 0s infinite alternate-reverse;*/
+  animation: rotateRound  10s ease-in-out 0s infinite alternate-reverse;
 }
 .circle-xl:before {
-  /*content: "";*/
   display: block;
   width: 20px;
   height: 20px;
@@ -502,10 +519,9 @@ header .nav-toggler.active .toggler-bar:last-child {
   position: absolute;
   top: calc(50% - 300px);
   left: calc(50% - 300px);
-  /*animation: rotateRound  9.5s ease-in-out 0.5s infinite alternate-reverse;*/
+  animation: rotateRound  9.5s ease-in-out 0.5s infinite alternate-reverse;
 }
 .circle-lg:before {
-  /*content: "";*/
   display: block;
   width: 20px;
   height: 20px;
@@ -525,10 +541,9 @@ header .nav-toggler.active .toggler-bar:last-child {
   position: absolute;
   top: calc(50% - 250px);
   left: calc(50% - 250px);
-  /*animation: rotateRound  9s ease-in-out 1s infinite alternate-reverse;*/
+  animation: rotateRound  9s ease-in-out 1s infinite alternate-reverse;
 }
 .circle-md:before {
-  /*content: "";*/
   display: block;
   width: 20px;
   height: 20px;
@@ -556,7 +571,7 @@ header .nav-toggler.active .toggler-bar:last-child {
 }
 .circle-blue.center {
   top: 70%;
-  left: 53%;
+  left: 93%;
 }
 
 .circle-navy {
@@ -570,14 +585,12 @@ header .nav-toggler.active .toggler-bar:last-child {
   box-shadow: 0 5px 51px rgba(0, 255, 161, 0.75);
 }
 .circle-navy.left {
-  top: 80%;
+  top: -30px;
   left: -30px;
-  /*animation: moveLeft_to 20s linear 0s infinite;*/
 }
 .circle-navy.right {
-  bottom: 10%;
-  right: -15px;
-  /*animation: moveRight_to 20s linear 0s infinite;*/
+  bottom: -30px;
+  right: -30px;
 }
 
 .square-navy {
@@ -640,6 +653,7 @@ header .nav-toggler.active .toggler-bar:last-child {
   color: #fff;
   overflow: hidden;
   position: relative;
+  font-weight: 700;
 }
 .banner-box img {
   position: absolute;
@@ -689,8 +703,14 @@ header .nav-toggler.active .toggler-bar:last-child {
 }
 
 .services-listing {
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+@media (min-width: 1600px) {
+  .services-listing {
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
 }
 
 .my-work {

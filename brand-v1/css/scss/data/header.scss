@@ -73,10 +73,24 @@ header {
                 font-size: 16px;
                 color: #fff;
                 padding: 15px 20px;
-                font-weight: 300;
+                font-weight: 400;
                 &:hover{
                     background: rgba(0,0,0,0.2);
                 }
+
+                &.quick-message{
+                    $wd : 60px;
+                    $lh : $wd - 6px;
+                    background: rgba(0,0,0,0.3);
+                    color: #fff;
+                    height: $wd;width: $wd;
+                    line-height: $lh;
+                    padding: 0;
+                    font-size: 20px;
+                    border-radius: 10%;
+                    border: 3px solid $navy; 
+                }
+
             }
 
         }

@@ -1,139 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Brand</title>
-        <link href="css/reboot.css" rel="stylesheet" type="text/css" />
-        <link href="css/grid.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
-        <link href="css/fullpage.css" rel="stylesheet" type="text/css" />
-        <link href="css/menu-style.css" rel="stylesheet" type="text/css" />
-        <link href="css/scss/style.css" rel="stylesheet" type="text/css" />
-        <style>
-            /*.none * { cursor: none !important; }*/
-            #mouse-move { position: absolute; left: 0%; right: 0%; border: 3px solid #00ffc6; width: 4px; height: 4px; z-index: 1000; transition: cubic-bezier(0.075, 0.82, 0.165, 1); border-radius: 50%; }
-            .fp-tableCell { display: flex; display: -webkit-flex; width: 100%; height: 100%; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center; }
-        </style>
-        <!-- https://en.leviev-group.com/about/ -->
-    </head>
 
-    <body onmousemove="showCoords(event)">
-        <div id="mouse-move"></div>
-        <div class="main-wrapper none">
-            <header class="fixed header justify-content-between">
-                <div class="brand"><a href="#"><img src="images/brand.png" alt="" /></a></div>
-                <a href="#0" class="nav-toggler clearfix" id="modal-trigger" data-type="cd-modal-trigger">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Brand</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/scss/style.css" rel="stylesheet" type="text/css" />
+    <style>
+        /*.none * { cursor: none !important; }*/
+
+        #mouse-move { position: absolute; left: 0%; right: 0%; border: 3px solid #00ffc6; width: 4px; height: 4px; z-index: 1000; transition: cubic-bezier(0.075, 0.82, 0.165, 1); border-radius: 50%; }
+        .fp-tableCell { display: flex; display: -webkit-flex; width: 100%; height: 100%; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center; }
+    </style>
+    <!-- https://en.leviev-group.com/about/ -->
+
+</head>
+
+<body onmousemove="showCoords(event)">
+    <div id="mouse-move"></div>
+    <div class="main-wrapper none">
+        <header class="fixed header justify-content-between">
+            <div class="brand"><a href="#"><img src="images/brand.png" alt="" /></a></div>
+            <a href="#0" class="nav-toggler clearfix" id="modal-trigger" data-type="cd-modal-trigger">
                     <span class="toggler-bar"></span>
                     <span class="toggler-bar"></span>
                     <span class="toggler-bar"></span>
                 </a>
-            </header>
-            <nav class="navigation d-flex justify-content-between">
-                <ul class="navgitation-list">
-                    <li><a href="#">career@gmail.com</a></li>
-                </ul>
-                <ul class="navgitation-list">
-                    <li><a href="#">Product Design </a></li>
-                    <li><a href="#">Ux/Ui Design</a></li>
-                    <li><a href="#">Development</a></li>
-                    <li><a href="#">Launcher</a></li>
-                </ul>
-                <ul class="navgitation-list">
-                    <li><a href="#">Behance</a></li>
-                    <li><a href="#">Linkedin</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
-            </nav>
+        </header>
+        <nav class="navigation d-flex justify-content-between align-items-center">
+            <!-- <ul class="navgitation-list">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul> -->
+            <ul class="navgitation-list">
+                <li><a href="#">Product Design </a></li>
+                <li><a href="#">Ux/Ui Design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Launcher</a></li>
+            </ul>
 
-            <div class="content-wrapper">
-                <div class="section-wrapper" id="fullpage">
-                    <!-- Home -->
-                    <section id="home" class="section" style="background-image: url(images/background-2.jpg); background-size: cover;">
-                        <div class="banner-box">
-                            <div class="square-navy"></div>
-                            <!-- <div class="random-circle"></div> -->
-                            <div class="circle-navy"></div>
-                            <div class="box">
-                                <h1>Creative<br>Art Direction<br>Design</h1>
-                            </div>
-                            <!-- <img src="images/content-img.png" alt="Banner Image"/> -->
+            <ul class="navgitation-list">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li>
+                    <a href="#" class="quick-message"><i class="fa fa-paper-plane"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content-wrapper">
+            <div class="section-wrapper" id="fullpage">
+                <!-- Home -->
+                <section id="home" class="section" style="background-image: url(images/background-2.jpg); background-size: cover;">
+                    <div class="banner-box">
+                        <div class="square-navy"></div>
+                        <!-- <div class="random-circle"></div> -->
+                        <div class="circle-navy"></div>
+                        <div class="box">
+                            <h1>Creative<br>Art Direction<br>Design</h1>
                         </div>
-                    </section>
-                    <!-- //Home -->
+                        <!-- <img src="images/content-img.png" alt="Banner Image"/> -->
+                    </div>
+                </section>
+                <!-- //Home -->
 
-                    <!-- About -->
-                    <section id="about" class="section " style="background-image: url(images/background.png); background-size: cover;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="about-content">
-                                        <h2 class="section-title">We Are<br/>Creative Agency</h2>
-                                        <p class="section-des">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer </p>
-                                        <a href="#" class="theme-btn">CHECK OUR WORK</a>
-                                    </div>
+                <!-- About -->
+                <section id="about" class="section " style="background-image: url(images/background.png); background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="about-content">
+                                    <h2 class="section-title">Who We Are?</h2>
+                                    <p class="section-des">Mad Brain, is proficient Design and Development solution company based in Chandigarh, the city beautiful. We offer a extensive range of services to reach your targeted spectators and carve up your valuable information focusing on retaining your customers. Our service includes Graphic Design, Web designing, Web application development, E-commerce solutions, Application development, maintenance, Web hosting solutions and Search Engine Optimization</p>
+                                    <a href="#" class="theme-btn">CHECK OUR WORK</a>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="about-img-wrapper">
-                                        <img src="images/about.png" alt="about" class="img-fluid" />
-                                    </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about-img-wrapper">
+                                    <img src="images/about.png" alt="about" class="img-fluid" />
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <!-- //About -->
+                    </div>
+                </section>
+                <!-- //About -->
 
-                    <!-- Services -->
-                    <section id="services" class="section" style="background-image: url(images/background-2.jpg); background-size: cover;">
-                        <div class="container">
-                            <div class="row justify-content-between">
-                                <div class="col-md-12">
-                                    <h2 class="section-title">Our Creative Services</h2>
-                                    <p class="section-des">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-                                </div>
+                <!-- Services -->
+                <section id="services" class="section" style="background-image: url(images/background-2.jpg); background-size: cover;">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-md-12">
+                                <h2 class="section-title">Our Creative Services</h2>
+                                <!-- <p class="section-des">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p> -->
                             </div>
-                            <div class="row services-listing">
-                                <div class="col-md-3">
-                                    <h3 class="list-title">Design</h3>
-                                    <ul class="section-list">
-                                        <li><a href="#">Brand & Identily</a></li>
-                                        <li><a href="#">Product Design</a></li>
-                                        <li><a href="#">Illustrations</a></li>
-                                        <li><a href="#">UI/UX Creation</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-3">
-                                    <h3 class="list-title">Development</h3>
-                                    <ul class="section-list">
-                                        <li><a href="#">Front End Development</a></li>
-                                        <li><a href="#">Magento</a></li>
-                                        <li><a href="#">Wordpress</a></li>
-                                        <li><a href="#">PHP Framework</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-3">
-                                    <h3 class="list-title">Marketing</h3>
-                                    <ul class="section-list">
-                                        <li><a href="#">SEO/Organic Rankings</a></li>
-                                        <li><a href="#">Pay Per Click</a></li>
-                                        <li><a href="#">Social Media Marketing</a></li>
-                                        <li><a href="#">Content Writing</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-3">
-                                    <h3 class="list-title">Counselting</h3>
-                                    <ul class="section-list">
-                                        <li><a href="#">Magento® Code Audit And Review</a></li>
-                                        <li><a href="#">SEO Audit</a></li>
-                                        <li><a href="#">Email Marketing Audit</a></li>
-                                        <li><a href="#">Conversion Rate Optimization</a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="row services-listing">
+                            <div class="col-md-3">
+                                <h3 class="list-title">Design</h3>
+                                <ul class="section-list">
+                                    <li><a href="#">Brand & Identily</a></li>
+                                    <li><a href="#">Product Design</a></li>
+                                    <li><a href="#">Illustrations</a></li>
+                                    <li><a href="#">UI/UX Creation</a></li>
+                                </ul>
                             </div>
+                            <div class="col-md-3">
+                                <h3 class="list-title">Development</h3>
+                                <ul class="section-list">
+                                    <li><a href="#">Front End Development</a></li>
+                                    <li><a href="#">Magento</a></li>
+                                    <li><a href="#">Wordpress</a></li>
+                                    <li><a href="#">PHP Framework</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h3 class="list-title">Marketing</h3>
+                                <ul class="section-list">
+                                    <li><a href="#">SEO/Organic Rankings</a></li>
+                                    <li><a href="#">Pay Per Click</a></li>
+                                    <li><a href="#">Social Media Marketing</a></li>
+                                    <li><a href="#">Content Writing</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h3 class="list-title">Counselting</h3>
+                                <ul class="section-list">
+                                    <li><a href="#">Magento® Code Audit And Review</a></li>
+                                    <li><a href="#">SEO Audit</a></li>
+                                    <li><a href="#">Email Marketing Audit</a></li>
+                                    <li><a href="#">Conversion Rate Optimization</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-                            <!-- THeme Button -->
-                            <a class="btn btn--svg js-animated-button" href="#project">
+                        <!-- THeme Button -->
+                        <a href="#" class="theme-btn">START PROJECT</a>
+                        <!-- <a class="btn btn--svg js-animated-button" href="#project">
                                 <span class="btn--svg__label">START PROJECT</span>
                                 <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60">
                                 <circle class="js-discover-circle" fill="#fff" cx="30" cy="30" r="28.7"></circle>
@@ -146,223 +154,235 @@
                                 <path fill="none" stroke="#fff" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
                                 </g>
                                 </svg>
-                            </a>
-                            <!-- THeme Button -->
-                        </div>
-                    </section>
-                    <!-- //Services -->
-                    <!-- Work -->
-                    <section id="work" class="section " style="background-image: url(images/background.png); background-size: cover;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h2 class="section-title">Projects</h2>
-                                </div>
-                                <div class="col-md-8">
-                                    <p class="section-des">I've had an amazing journey since 2013 working for several Companies designing websites and applications. we working on complete case studies.</p>
-                                </div>
+                            </a> -->
+                        <!-- THeme Button -->
+                    </div>
+                </section>
+                <!-- //Services -->
+                <!-- Work -->
+                <section id="work" class="section " style="background-image: url(images/background.png); background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h2 class="section-title">Projects</h2>
                             </div>
-                            <div class="row my-work">
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="project-wrapper">
-                                        <div class="project-img">
-                                            <img src="images/project.png" alt="#" />
-                                        </div>
-                                        <h5>Project Title</h5>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="project-wrapper">
-                                        <div class="project-img">
-                                            <img src="images/project.png" alt="#" />
-                                        </div>
-                                        <h5>Project Title</h5>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="project-wrapper">
-                                        <div class="project-img">
-                                            <img src="images/project.png" alt="#" />
-                                        </div>
-                                        <h5>Project Title</h5>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="project-wrapper">
-                                        <div class="project-img">
-                                            <img src="images/project.png" alt="#" />
-                                        </div>
-                                        <h5>Project Title</h5>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="project-wrapper">
-                                        <div class="project-img">
-                                            <img src="images/project.png" alt="#" />
-                                        </div>
-                                        <h5>Project Title</h5>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="project-wrapper">
-                                        <div class="project-img">
-                                            <img src="images/project.png" alt="#" />
-                                        </div>
-                                        <h5>Project Title</h5>
-                                    </div>
-                                </div>
+                            <div class="col-md-8">
+                                <p class="section-des">I've had an amazing journey since 2013 working for several Companies designing websites and
+                                    applications. we working on complete case studies.</p>
                             </div>
                         </div>
-                    </section>
-                    <!--//Work -->
-                    <!-- Team -->
-                    <section id="team" class="section" style="background-image: url(images/background-2.jpg); background-size: cover;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h2 class="section-title">Team</h2>
-                                </div>
-                                <div class="col-md-8">
-                                    <p class="section-des">I've had an amazing journey since 2013 working for several Companies designing websites and applications. we working on complete case studies.</p>
+                        <div class="row my-work">
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="project-wrapper">
+                                    <div class="project-img">
+                                        <img src="images/project.png" alt="#" />
+                                    </div>
+                                    <h5>Project Title</h5>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <h4 class="team-mem-title"></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod autem satis est, eo quicquid accessit, nimium est; Hanc ergo intuens debet institutum illud quasi signum absolvere. At enim hic etiam dolore. Quamquam te quidem video minime esse deterritum. Et ille ridens: Video, inquit, quid agas; Collige omnia, quae soletis: Praesidium amicorum.</p>
-                                    <p>Duo Reges: constructio interrete. Haec para/doca illi, nos admirabilia dicamus. Hoc dixerit potius Ennius: Nimium boni est, cui nihil est mali. Itaque his sapiens semper vacabit. cui nihil est mali.</p>
-                                    <a href="#" class="theme-btn">START PROJECT</a>
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="about-img-wrapper">
-                                        <img src="images/about.png" alt="about" class="img-fluid" />
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="project-wrapper">
+                                    <div class="project-img">
+                                        <img src="images/project.png" alt="#" />
                                     </div>
+                                    <h5>Project Title</h5>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="project-wrapper">
+                                    <div class="project-img">
+                                        <img src="images/project.png" alt="#" />
+                                    </div>
+                                    <h5>Project Title</h5>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="project-wrapper">
+                                    <div class="project-img">
+                                        <img src="images/project.png" alt="#" />
+                                    </div>
+                                    <h5>Project Title</h5>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="project-wrapper">
+                                    <div class="project-img">
+                                        <img src="images/project.png" alt="#" />
+                                    </div>
+                                    <h5>Project Title</h5>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="project-wrapper">
+                                    <div class="project-img">
+                                        <img src="images/project.png" alt="#" />
+                                    </div>
+                                    <h5>Project Title</h5>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <!--// Team -->
-                    <!-- Contact -->
-                    <section id="contact" class="section" style="background-image: url(images/background.png); background-size: cover;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h2 class="section-title">Contact Us</h2>
+                    </div>
+                </section>
+                <!--//Work -->
+                <!-- Team -->
+                <section id="team" class="section" style="background-image: url(images/background-2.jpg); background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h2 class="section-title">Team</h2>
+                            </div>
+                            <!-- <div class="col-md-8">
+                                <p class="section-des">I've had an amazing journey since 2013 working for several Companies designing websites and
+                                    applications. we working on complete case studies.</p>
+                            </div> -->
+                        </div>
+                        <div class="row  align-items-center">
+                            <div class="col-md-5">
+                                <h3 class="team-mem-title">Bhupinder Singh</h3>
+                                <h5>Frontend Developer</h5>
+                                <p class="section-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod autem satis est, eo quicquid accessit, nimium est; Hanc ergo intuens debet institutum illud quasi signum absolvere. At enim hic etiam dolore. Quamquam te quidem video minime esse deterritum. Et ille ridens: Video, inquit, quid agas; Collige omnia, quae soletis: Praesidium amicorum.</p>
+                                    <a href="#" class="theme-btn">VIEW ALL MEMBERS</a>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="about-img-wrapper">
+                                    <img src="images/about.png" alt="about" class="img-fluid" />
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-4 order-2">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <input type="text" placeholder="Name" class="form-control">
-                                            </div>
-                                            <div class="col-12">
-                                                <input type="text" placeholder="Email" class="form-control">
-                                            </div>
-                                            <div class="col-12">
-                                                <input type="text" placeholder="Phone Number" class="form-control">
-                                            </div>
-                                            <div class="col-12">
-                                                <input type="text" placeholder="company Name" class="form-control">
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="btn-wrapper">
-                                                    <input type="submit" value="Submit" class="theme-btn">
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-check">
-                                                    <input type="checkbox">
-                                                    <label>&nbsp;i'm not robot</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-12 col-lg-8 order-1">
-                                    <div class="row choose-services">
+                        </div>
+                    </div>
+                </section>
+                <!--// Team -->
+                <!-- Contact -->
+                <section id="contact" class="section" style="background-image: url(images/background.png); background-size: cover;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="section-title">Contact Us</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-4 order-2">
+                                <form>
+                                    <div class="row">
                                         <div class="col-12">
-                                            <h4>Choose Our Services</h4>
+                                            <input type="text" placeholder="Name" class="form-control">
                                         </div>
-                                        <div class="col-12 col-md-4">
-                                            <ul>
-                                                <li><a href="#">Mouckup Designing</a></li>
-                                                <li><a href="#">Banner Designing</a></li>
-                                                <li><a href="#">Logo Designing</a></li>
-                                                <li><a href="#">Wireframe</a></li>
-                                                <li><a href="#">Landing Page</a></li>
-                                                <li><a href="#">Moblie Design</a></li>
-                                                <li><a href="#">Cake PHP</a></li>
-                                            </ul>
+                                        <div class="col-12">
+                                            <input type="text" placeholder="Email" class="form-control">
                                         </div>
-                                        <div class="col-12 col-md-4">
-                                            <ul>
-                                                <li><a href="#">Business Development</a></li>
-                                                <li><a href="#">Project Codination</a></li>
-                                                <li><a href="#">Requirment Anlasis</a></li>
-                                                <li><a href="#">Quality Analysist</a></li>
-                                                <li><a href="#">Project Co-ordination</a></li>
-                                                <li><a href="#">Wordpress</a></li>
-                                            </ul>
+                                        <div class="col-12">
+                                            <input type="text" placeholder="Phone Number" class="form-control">
                                         </div>
-                                        <div class="col-12 col-md-4">
-                                            <ul>
-                                                <li><a href="#">Front End Development</a></li>
-                                                <li><a href="#">Responsive Design</a></li>
-                                                <li><a href="#">Psd to Html5</a></li>
-                                                <li><a href="#">Adobe xD to Html5</a></li>
-                                                <li><a href="#">Quality analysist</a></li>
-                                                <li><a href="#">Coordintor</a></li>
-                                            </ul>
+                                        <div class="col-12">
+                                            <input type="text" placeholder="company Name" class="form-control">
                                         </div>
+                                        <div class="col-12">
+                                            <div class="btn-wrapper">
+                                                <input type="submit" value="Submit" class="theme-btn">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input type="checkbox">
+                                                <label>&nbsp;i'm not robot</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 col-lg-8 order-1">
+                                <div class="row choose-services">
+                                    <div class="col-12">
+                                        <h4>Choose Our Services</h4>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <ul>
+                                            <li><a href="#">Mouckup Designing</a></li>
+                                            <li><a href="#">Banner Designing</a></li>
+                                            <li><a href="#">Logo Designing</a></li>
+                                            <li><a href="#">Wireframe</a></li>
+                                            <li><a href="#">Landing Page</a></li>
+                                            <li><a href="#">Moblie Design</a></li>
+                                            <li><a href="#">Cake PHP</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <ul>
+                                            <li><a href="#">Business Development</a></li>
+                                            <li><a href="#">Project Codination</a></li>
+                                            <li><a href="#">Requirment Anlasis</a></li>
+                                            <li><a href="#">Quality Analysist</a></li>
+                                            <li><a href="#">Project Co-ordination</a></li>
+                                            <li><a href="#">Wordpress</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <ul>
+                                            <li><a href="#">Front End Development</a></li>
+                                            <li><a href="#">Responsive Design</a></li>
+                                            <li><a href="#">Psd to Html5</a></li>
+                                            <li><a href="#">Adobe xD to Html5</a></li>
+                                            <li><a href="#">Quality analysist</a></li>
+                                            <li><a href="#">Coordintor</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- //row -->
-
                         </div>
-                    </section>
-                    <!-- //contact -->
-                </div>
+
+                        <!-- //row -->
+
+                    </div>
+                </section>
+                <!-- //contact -->
             </div>
         </div>
+    </div>
 
 
 
-        <div class="cd-modal" data-modal="modal-trigger">
-            <div class="cd-svg-bg" data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
-                <svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+    <div class="cd-modal" data-modal="modal-trigger">
+        <div class="cd-svg-bg" data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"
+            data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z"
+            data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"
+            data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z"
+            data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"
+            data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+            <svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
                 <title>SVG Modal background</title>
-                <path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
-                <path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
-                <path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
-                </svg>
+                <path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"
+                />
+                <path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"
+                />
+                <path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"
+                />
+            </svg>
+        </div>
+        <div class="cd-modal-content">
+            <div class="main-menu" id="main-menu">
+                <ul id="menu">
+                    <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
+                    <li data-menuanchor="3rdPage"><a href="#3rdPage">Services</a></li>
+                    <li data-menuanchor="4thPage"><a href="#4thPage">Work</a></li>
+                    <li data-menuanchor="5thPage"><a href="#5thPage">Team</a></li>
+                    <li data-menuanchor="lastPage"><a href="#lastPage">Contact</a></li>
+                </ul>
             </div>
-            <div class="cd-modal-content">
-                <div class="main-menu" id="main-menu">
-                    <ul id="menu">
-                        <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
-                        <li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
-                        <li data-menuanchor="3rdPage"><a href="#3rdPage">Services</a></li>
-                        <li data-menuanchor="4thPage"><a href="#4thPage">Work</a></li>
-                        <li data-menuanchor="5thPage"><a href="#5thPage">Team</a></li>
-                        <li data-menuanchor="lastPage"><a href="#lastPage">Contact</a></li>
-                    </ul>
-                </div>
-            </div> <!-- cd-modal-content -->  
-            <a href="#0" class="modal-close close-btn">
+        </div>
+        <!-- cd-modal-content -->
+        <a href="#0" class="modal-close close-btn">
                 <span class="menu-close-bar"></span>
                 <span class="menu-close-bar"></span>
             </a>
-        </div> <!-- cd-modal --> 
-        <script src="js/js.js" type="text/javascript"></script>
-        <script src="js/fullpage.js" type="text/javascript"></script>
-        <script src="js/snap.svg-min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/script.js" type="text/javascript"></script>
-        <script type="text/javascript">
+    </div>
+    <!-- cd-modal -->
+    <script src="js/js.js" type="text/javascript"></script>
+    <script src="js/fullpage.js" type="text/javascript"></script>
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 //                        sectionsColor: ['#1d2027', '#1d2027', '#1d2027', '#1d2027', '#1d2027'],
@@ -372,21 +392,20 @@
                 navigationPosition: 'right',
                 navigationTooltips: ['First page', 'Second page', 'Third page', '4th page', '5th page', 'Last page'],
                 //equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
-                easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+                // easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
             });
 
         });
+    </script>
+    <script>
+        function toggleClass(elm) {
+            var element = document.getElementById("main-menu");
+            var menu_toggler = document.getElementById('navToggler');
 
-        </script>
-        <script>
-            function toggleClass(elm) {
-                var element = document.getElementById("main-menu");
-                var menu_toggler = document.getElementById('navToggler');
-
-                menu_toggler.classList.toggle(elm);
-                element.classList.toggle(elm);
-            }
-        </script>
-    </body>
+            menu_toggler.classList.toggle(elm);
+            element.classList.toggle(elm);
+        }
+    </script>
+</body>
 
 </html>

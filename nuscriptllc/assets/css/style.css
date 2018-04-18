@@ -1,0 +1,282 @@
+body {
+    font-family: 'avenir';
+    font-size: 16px;
+    font-weight: 400;
+}
+@media(min-width: 1366px){
+    .container{
+        max-width: 1240px
+    }
+}
+
+*{
+    transition: all 0.3s linear 0s;
+}
+/*Common*/
+.btn {
+    border-radius: 0;
+    font-size: 18px;
+    padding: 20px 60px;
+}
+
+.btn-primary {
+    background-color: #59d998;
+    color : #fff;
+    border-color: #59d998; 
+    line-height: 1;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #47c686;
+    color : #fff;
+    border-color: #59d998;
+}
+
+.section{
+    margin-bottom: 30px;
+}
+
+.section-heading{
+    font-size: 36px;
+    color: #414143;
+    margin-bottom: 30px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+.section-heading-green{
+    font-size: 28px;
+    color: #59d998;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.section-head-divider{
+    display: block;
+    width: 250px;
+    background: #59d998;
+    height: 13px;
+    
+}
+/*//Common*/
+
+
+/*Header*/
+.site-header {
+    min-height: 200px;
+    padding-top: 40px;
+}
+.site-header .container{
+    position: relative;
+}
+.top-links{
+    position: absolute;
+    top: -40px;
+    right: 20px;
+}
+.top-links{font-size: 0; }
+.top-links a{
+    display: inline-block;
+    border-left: 1px solid #c5c5c5;
+    border-right: 1px solid #c5c5c5;
+    padding: 13px 30px 13px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+}
+.top-links a:nth-child(2){
+    border: 0;
+}
+.top-links a img{
+    margin-bottom: 8px;
+}
+
+.site-header .navbar-light .navbar-nav .nav-link{
+    font-size: 24px;
+    color: #000;
+    padding: 0 35px 0 35px; 
+}
+
+
+/*//Header*/
+
+
+/*Banner*/
+.banner {position: relative;margin-bottom: 60px; }
+.banner .jumbotron{
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+}
+.banner .jumbotron .box-wrapper{
+    margin-top: 90px;
+    
+}
+.banner .jumbotron h1{
+    color: #fff;
+    font-size: 72px;
+    
+}
+.banner .banner-box{
+    width: 225px;
+    height: 200px;
+    background: #fff;
+    padding: 28px;
+   margin: 0 3px; 
+    
+}
+.banner .banner-box .divider-line{
+    display: block;
+    height: 13px;
+    background-color:  #59d998;
+    margin-top: 15px;
+}
+.banner .img-wrapper{
+    display: block;
+    
+}
+
+/*//Banner*/
+
+
+
+/*our story section*/
+
+.our-story .section-body {
+    margin-top: 30px;
+}
+.our-story .section-body p{
+    max-width: 720px;
+    font-size: 20px;
+    line-height: 36px;
+}
+.our-story .green-box{
+    padding: 25px;
+    background-color: #9be8c1;
+    line-height: 1.5;
+    font-size: 16px; 
+    color: #000;
+}
+
+/*//our-story section*/
+
+
+/*services */
+.service-content{
+    padding-left: 90px;
+    
+}
+.service-content .service-content-inner {
+    
+    position: relative;
+}
+.service-content .service-content-inner .service-title-arrow {
+    position: absolute;
+    top: 15px;
+    left: -50px;
+}
+.service-content .slider-dots{
+    margin-top: 50px;
+}
+.service-content .slider-dot{
+    border: 1px solid transparent;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 6px;
+}
+.service-content .slider-dot.active{
+    border: 1px solid #59d998;
+}
+.service-content .slider-dot:before{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: #bfc0c1;
+    content: "";
+    border-radius: 50%;
+}
+.service-content .slider-dot.active:before{
+    background: #59d998;
+}
+.service-title{
+    font-size: 54px;
+    color: #000;
+    font-weight: 400;
+}
+/*//services*/
+
+
+/*technology*/
+.technology .section-body .row{
+    margin: 0 -3px;
+}
+.technology .section-body .row > .col {
+    padding: 0 3px;
+    
+}
+.technology .section-body .tech-box{
+    background-color: #eff0f1;
+    padding: 40px;
+}
+.technology .section-body .tech-box span{
+    display: block;
+}
+.technology .section-body .tech-box span:nth-child(1){
+    min-height: 75px;   
+}
+/*technology*/
+
+
+/*contact*/
+.contact .section-body .row{
+    margin: 0 -3px;
+}
+.contact .section-body .row > .col {
+    padding: 0 3px;
+    
+}
+.contact .section-body .contact-box{
+    background-color: #eff0f1;
+    padding: 40px;
+    display: flex;
+    height: 100%;
+}
+.contact .contact-text{
+    color: #000;
+    font-size: 28px;
+    line-height: 38px;
+    display: block;
+    width: 100%;
+}
+/*contact*/
+
+/*footer*/
+
+.footer .copy-right,
+.footer .footer-link{
+    display: inline-block;
+    font-size: 16px;
+    color: #000;
+    padding: 10px 3px;
+    line-height: 1;
+    
+}
+.footer .footer-link:hover{
+    text-decoration: none;
+    color: #59d998;
+}
+
+.footer .social-media a{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+/*//footer*/

@@ -38,7 +38,7 @@
         top: calc(50% - #{$d / 2});
         left: calc(50% - #{$d / 2});
         &:before{
-            content: "";
+            // content: "";
             display: block;
             width: 20px;
             height: 20px;
