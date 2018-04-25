@@ -6,19 +6,25 @@ body {
 }
 @media(min-width: 1366px){
     .container{
-        max-width: 1240px
+        max-width: 1280px
     }
 }
 *{
     transition: all 0.3s linear 0s;
 }
 /*Common*/
+a:focus,
+a:active,
+a:hover{
+    text-decoration: none;
+}
 .btn {
     border-radius: 0;
     font-size: 18px;
     padding: 15px 80px;
     max-width: 250px;
 }
+
 
 .btn-primary {
     background-color: #59d998;
@@ -29,13 +35,13 @@ body {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-    background-color: #47c686;
+    background-color: #038561;
     color : #fff;
-    border-color: #59d998;
+    border-color: #038561;
 }
 
 .section{
-    margin-bottom: 30px;
+    margin-bottom: 46px;
 }
 
 .section-heading{
@@ -47,7 +53,7 @@ body {
     line-height: 45px;
 }
 .section-sub-heading{
-    font-size: 24px;
+    font-size: 28px;
     color: #414143;
     margin-bottom: 10px;
     font-weight: 400;
@@ -86,23 +92,22 @@ body {
 }
 
 .carousel-indicators li.active{
-    border: 2px solid #59d998;
+    border: 2px solid #038561;
 }
 /*//Common*/
 
 
 /*Header*/
 .site-header {
-    min-height: 142px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    height: 142px;
+    padding-top: 10px;
 }
 .site-header .container{
     position: relative;
 }
 .top-links{
     position: absolute;
-    top: -20px;
+    top: -10px;
     right: 20px;
     margin: 0;
     font-size: 0;
@@ -113,9 +118,9 @@ body {
     display: inline-flex;
     border-left: 1px solid #c5c5c5;
     width: 115px;
-    height: 70px;
+    height: 63px;
     text-align: center;
-    font-size: 14px;
+    font-size: 15.75px;
     padding-top: 5px;
     padding-bottom: 2px;
     justify-content: center;
@@ -129,19 +134,33 @@ body {
     color: #000000;
 }
 .top-links a img{
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+}
+.top-links a:hover img{
+    filter: brightness(50%);
 }
 
 
+.site-header .navbar-light {
+    flex-wrap: wrap;
+}
 .site-header .navbar-light .navbar-nav .nav-link{
     font-size: 24px;
     color: #000;
-    padding: 0 35px; 
+    padding: 8px 30px 6px;  
     transition: all 0.3s linear 0s;
     background-color: #fff;
+    line-height: 1.5;
 }
 .site-header .navbar-light .navbar-nav .nav-link:hover{
-    color: #59d998;
+    color: #fff;
+    background-color: #59d998;
+}
+.site-header .navbar-brand{
+    padding: 10px 0 0;
+}
+.site-header .navbar-brand img{
+    max-width: 115px;
 }
 
 
@@ -170,7 +189,8 @@ body {
 
 
 .banner .carousel-caption{
-    bottom: 270px;
+    bottom: auto;
+    top: 150px;
 }
 
 /*Banner*/
@@ -180,7 +200,7 @@ body {
 }
 .banner {
     position: relative;
-    margin-bottom: 30px; 
+    margin-bottom: 46px; 
     min-height: 800px; 
     /*background-image : url(../images/banner-2.jpg);*/
     background-repeat: no-repeat;
@@ -192,23 +212,24 @@ body {
 }
 .banner  h1{
     color: #fff;
-    font-size: 72px;
+    font-size: 60px;
 
 }
 .banner .banner-box{
-    width: 225px;
-    height: 200px;
+    width: 246px;
+    height: 246px;
     background: rgba(255,255,255,0.9);
     padding: 28px;
-    margin: 0 3px; 
+    margin: 0 1px; 
     color: #414143;
     transition: all 250ms ease;
-    transform: translateY(0);
+    font-size: 21px;
+    /*transform: translateY(0);*/
 }
 .banner .banner-box:hover{
     background: rgba(255,255,255,1);
     color: #038561;
-    transform: translateY(-10px);
+    /*transform: translateY(-10px);*/
 }
 
 
@@ -226,14 +247,13 @@ body {
 }
 .banner .banner-box .img-wrapper{
     display: block;
-    margin-bottom: 15px;
-
+    margin-bottom: 30px;
 }
 /*//Banner*/
 
 /*our story section*/
 .our-story .section-body {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .our-story .section-body p{
     max-width: 720px;
@@ -241,7 +261,7 @@ body {
     line-height: 36px;
 }
 .our-story .green-box{
-    padding: 25px;
+    padding: 15px;
     background-color: #9be8c1;
     line-height: 1.5;
     font-size: 18px; 
@@ -253,7 +273,7 @@ body {
 
 /*services */
 .service-content{
-    padding-left: 90px;
+    padding-left: 40px;
     padding-bottom: 126px;
 }
 .services .section-body{
@@ -274,7 +294,7 @@ body {
 .service-content .service-content-inner .service-title-arrow {
     position: absolute;
     top: 15px;
-    left: -50px;
+    left: -38px;
     right: auto;
     bottom: auto;
     width: auto;
@@ -322,13 +342,23 @@ body {
     padding: 40px;
     display: flex;
     min-height: 100%;
+    flex-wrap: wrap;
+}
+.contact .section-body .contact-box .contact-box-icon{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    color: #59d998;
+    line-height: 1;
 }
 .contact .contact-text{
     color: #000;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 38px;
     display: block;
     width: 100%;
+    text-align: center
 }
 /*contact*/
 
@@ -336,7 +366,7 @@ body {
 
 .footer {
     background-color: #fff;
-    border-top: 2px solid #59d998;
+    /*border-top: 2px solid #59d998;*/
     padding-top: 5px;
 }
 .footer .copy-right,
@@ -357,10 +387,18 @@ body {
     display: inline-block;
     margin-right: 20px;
     margin-top: 10px;
+    width: 24px;height: 24px;
+    background-color: #59d998;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 12px;
 }
 
-.footer .social-media a img{
-    width: 24px;
+
+.footer  a.copyright{
+    color: #59d998
 }
 /*//footer*/
 
