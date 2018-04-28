@@ -282,7 +282,7 @@ a:hover{
 }
 .services .carousel .carousel-indicators{
     left: auto;
-    right: calc(50% - 198px);
+    right: calc(50% - 158px);
     margin: 0;
     bottom: 50px;
 
