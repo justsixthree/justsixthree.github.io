@@ -385,11 +385,11 @@ a:hover{
 
 .footer .social-media a{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 0;
     margin-top: 10px;
     width: 24px;height: 24px;
     background-color: #59d998;
-    color: #fff;
+    color: #fff  !important;
     border-radius: 50%;
     text-align: center;
     line-height: 24px;
