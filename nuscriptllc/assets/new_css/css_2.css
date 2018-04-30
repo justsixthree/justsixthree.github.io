@@ -1148,7 +1148,8 @@ a:hover, a:focus {
     text-indent: 200%;
     white-space: nowrap;
     overflow: hidden;
-    background: url(/sites/chl/themes/chl/img/logo-chl.svg) 0 0 no-repeat;
+    background: url(../images/logo.png) 0 0 no-repeat;
+    background-size: contain;
 }
 .clinic-eich .header__logo {
     background-image: url(/sites/chl/themes/chl/img/logo-chl--eich.svg);
@@ -2436,6 +2437,7 @@ a:hover, a:focus {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+        display: none;
 }
 .icon-book:before {
     content: "\61"}
