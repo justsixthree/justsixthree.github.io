@@ -1184,7 +1184,7 @@ a:hover, a:focus {
     border-left: 1px solid #d0d0d0;
     text-align: center;
     height: 100%}
-.quick-nav__list li:last-child {
+.quick-nav__list li:nth-child(3) {
     border-right: 1px solid #d0d0d0;
 }
 .quick-nav__list a {
