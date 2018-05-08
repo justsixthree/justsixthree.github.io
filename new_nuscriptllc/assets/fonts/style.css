@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'avenir';
+    src: url('AvenirNextRoundedPro-Med.otf')format('otf');
+    src: url('AvenirNextRoundedPro-Med.WOFF') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avenir';
+    src: url('AvenirNextRoundedPro-Reg.otf')format('otf');
+    src: url('AvenirNextRoundedPro-Reg.WOFF') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
