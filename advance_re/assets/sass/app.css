@@ -1,0 +1,61 @@
+/*@import "data/bootstrap";*/
+/*Transitions*/
+/*//Transitions*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section .section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section .section-heading h2 {
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+header {
+  background: #f2f2f2;
+}
+header .navbar-brand {
+  width: 300px;
+}
+header .navbar-nav .nav-item .btn {
+  text-transform: uppercase;
+}
+header .navbar-nav .nav-item .nav-link {
+  color: #868ca4;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.3s linear 0s;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer {
+  background-color: #1c2023;
+  padding-top: 80px;
+}
+.footer h4 {
+  color: #fff;
+  font-size: 20px;
+}
+.footer li a {
+  color: #fff;
+  font-size: 14px;
+}
+.footer .footer-bottom {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=app.css.map */

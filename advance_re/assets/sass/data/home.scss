@@ -1,0 +1,47 @@
+header{
+    background: #f2f2f2;
+    .navbar-brand{
+        width: 300px;
+    }
+    .navbar-nav {
+        .nav-item {
+            .btn{
+                text-transform: uppercase;
+            }
+            .nav-link{
+                color: $secondary-color;
+                font-size: 14px;
+                text-transform: uppercase;
+                transition: all 0.3s linear 0s;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+
+
+
+
+.footer{
+    background-color: #1c2023;
+    padding-top: 80px;
+    h4{
+        color: #fff;
+        font-size: 20px;
+    }
+    li {
+        a{
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+    .footer-bottom {
+        background-color: #000000;
+        color: #fff;
+        padding: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
