@@ -38,6 +38,63 @@ header .navbar-nav .nav-item .nav-link {
   padding-right: 15px;
 }
 
+.secondary-nav .nav-item .nav-link {
+  color: #455560;
+  font-weight: 600;
+}
+.secondary-nav .nav-item .nav-link:hover {
+  color: #39939b;
+}
+
+.banner .play-btn {
+  margin: 30px 0;
+}
+.banner .carousel-caption {
+  bottom: 30%;
+}
+
+.search-bar-wrapper {
+  background-color: #254864;
+  padding: 40px 0;
+}
+.search-bar-wrapper h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.search-bar-wrapper select.form-control {
+  border-radius: 0;
+  min-height: 55px;
+}
+.search-bar-wrapper .btn {
+  border-radius: 0;
+  height: 55px;
+  line-height: 41px;
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact-us form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.contact-us form .form-control {
+  height: 66px;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid #ececec;
+  padding-left: 30px;
+}
+.contact-us form i.fa {
+  position: absolute;
+  top: 23px;
+  left: 15px;
+}
+
 .footer {
   background-color: #1c2023;
   padding-top: 80px;
@@ -48,7 +105,7 @@ header .navbar-nav .nav-item .nav-link {
 }
 .footer li a {
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
 }
 .footer .footer-bottom {
   background-color: #000000;
