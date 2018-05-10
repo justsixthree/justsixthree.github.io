@@ -16,3 +16,11 @@ body {
         }
     }
 }
+
+.form-control{
+    transition: all 0.3s linear 0s;
+    &:focus{
+        box-shadow: none;
+        border-bottom: 1px solid #000 !important;
+    }
+}

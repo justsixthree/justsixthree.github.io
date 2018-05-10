@@ -20,6 +20,14 @@ body {
   text-transform: uppercase;
 }
 
+.form-control {
+  transition: all 0.3s linear 0s;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-bottom: 1px solid #000 !important;
+}
+
 header {
   background: #f2f2f2;
 }
@@ -76,6 +84,26 @@ header .navbar-nav .nav-item .nav-link {
   color: #fff;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.about-section .image-wrapper {
+  position: relative;
+  margin-bottom: 50px;
+}
+.about-section .image-wrapper:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  background-color: #add8fa;
+  z-index: 1;
+}
+.about-section .image-wrapper img {
+  position: relative;
+  z-index: 2;
 }
 
 .testimonial {
@@ -160,6 +188,14 @@ header .navbar-nav .nav-item .nav-link {
   padding: 20px;
   font-size: 12px;
   text-align: center;
+}
+
+.tabs-section .tab-pane-inner {
+  padding: 40px 0;
+}
+.tabs-section ul li a.nav-link {
+  font-size: 14px;
+  color: #333;
 }
 
 /*# sourceMappingURL=app.css.map */

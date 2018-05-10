@@ -36,7 +36,7 @@ header{
         margin: 30px 0; 
     }
     .carousel-caption{
-    bottom: 30%;    
+        bottom: 30%;    
     }
 }
 
@@ -66,7 +66,28 @@ header{
 }
 
 
-
+.about-section{
+    .image-wrapper{
+        position: relative;
+        margin-bottom: 50px;
+        &:before{
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 50px ;
+            left: 50px;
+            width: 100%;
+            height: 100%;
+            background-color: #add8fa;
+            z-index: 1;
+               
+        }
+        img{
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
 .testimonial{
     background-image: url(../images/testimonial-bg.png);
     background-repeat: no-repeat;
@@ -80,7 +101,7 @@ header{
         }
     }
     .testimonial-data{
-        
+
         h5{
             max-width: 920px;
             margin: 30px auto 30px;
@@ -116,7 +137,7 @@ header{
             background: rgba(0,0,0,0);
             border-bottom: 1px solid rgba(0,0,0,0.3);
             margin-bottom: 10px;
-            
+
         }
         textarea.form-control{
             height: 120px;
@@ -158,5 +179,17 @@ header{
         padding: 20px;
         font-size: 12px;
         text-align: center;
+    }
+}
+
+
+
+.tabs-section{
+    .tab-pane-inner{
+        padding: 40px 0;
+    }
+    ul li a.nav-link{
+        font-size: 14px;
+        color: #333;
     }
 }
