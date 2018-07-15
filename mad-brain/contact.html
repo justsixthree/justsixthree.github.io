@@ -7,24 +7,39 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/fullpage.css" rel="stylesheet" type="text/css" />
+
         <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
         <style>
-            .brand{
-                display: none;
+            .btn-round{
+                border-radius: 35px;
             }
-            .fp-viewing-firstPage .brand{
-                display: inline-block;
+            .form-control{
+                background: rgba(108,0,255,0.03);
+                border: 0;
+                border-left: 2px solid #6c00ff;
+                border-radius: 0;
+                height: 65px;
+                margin-bottom: 55px;
             }
+
+            #home{
+                background: #fff;
+            }
+            .contact .menu-toggler-bar{
+                background-color: #000;
+            }
+            
         </style>
     </head>
 
-    <body>
+
+
+    <body class="contact">
         <!--Header-->
         <header class="fixed header justify-content-between">
             <div class="row align-items-center">
                 <div class="col-2">
-                    <button class="btn menu-toggler p-0">
+                    <button class="btn menu-toggler">
                         <span class="menu-toggler-bar"></span>
                         <span class="menu-toggler-bar"></span>
                         <span class="menu-toggler-bar"></span>
@@ -34,7 +49,9 @@
                     <a href="" class="brand">Mad Brain</a>
                 </div>
                 <div class="col-2 text-right">
-                    <a href="#" class="mail">Freebies</a>
+                    <a href="#" class="mail">
+                        Freebies
+                    </a>
                 </div>
             </div>
         </header>
@@ -109,94 +126,120 @@
             </ul>
         </div>
 
-        <a class="go-to-bottom" href="#"><img src="assets/images/down.png" alt="Down Arrow"/></a>
+        <a class="go-to-bottom">
+            <img src="assets/images/down.png" alt="Down Arrow"/>
+        </a>
 
 
 
         <div class="container-fluid p-0" id="fullpage">
-            <section class="section" id="home">
+            <section class="section " id="home">
                 <div class="row main-row">
                     <div class="col-12 col-xl-6">
-                        <h1>CREATIVE <br/>ART DIRECTION <br/>DESIGN</h1>
+                        <h2 class="p-0 text-dark">Get an estimate in 7 days</h2>
+                        <p class="p-0 text-dark">Fill out this simple form. Our team will contact you <br/> promptly to discuss next steps.</p>
                     </div>
                     <div class="col-12 col-xl-6 text-right">
-                        <img src="assets/images/brain.png" alt=""/>
+                        <img src="assets/images/conatct-banner.png" alt=""/>
                     </div>
                 </div>
             </section>
 
-            <section class="section white" id="about">
+            <section class="section white">
                 <div class="row main-row">
                     <div class="col-12 text-center">
-                        <h2>AWARD WINNING APPS, POWERED BY TECHNOLOGY,LED BY DESIGN,<br/> NURTURED BY OUR GLOBAL EXPERTISE IN APP DEVELOPMENT</h2>
-                        <p class="mx-auto">
-                            Mad brain is a leading mobile app development agency with a zeal for perfection and innovation. To 
-                            create mobile apps that redefine user experience has been our vision since inception. 
-                            With our ability to offer tailor-made solutions by understanding client requirements, 
-                            our reputation in the market has increased ten-fold, worldwide!
-                        </p>
-                        <div class="btn-wrapper mt-4">
-                            <a class="btn btn-outline-dark mad-btn " href="#">VIEW WORK <img src="assets/images/right-arrow.svg" alt="#"/></a>
-                            <a class="btn btn-outline-dark mad-btn" href="#">LET'S TALK <img src="assets/images/right-arrow.svg" alt="#"/></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="section white"  id="portfolio">
-                <div class="row main-row">
-                    <div class="col-12">
-                        
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="section services"  id="services">
-                <div class="section-inner">  
-                    <div class="service-content text-center">
-                        <h2>Fast and Reliable Software Solutions <br/>for your Business</h2>
-                        <div class="row service-card-wrapper">
-                            <div class="col-md-4">
-                                <div class="card service-card ui-ux">
-                                    <img src="assets/images/m.png" class="img-fluid"/>
-                                    <h4><span>UI/UX DESIGN</span></h4>
-                                </div>
+                        <div class="mt-4 pb-5 row">
+                            <div class="col-12">
+                                <h2 class="mb-5">What is your project type?</h2>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card service-card web-dev">
-                                    <img src="assets/images/a.png" class="img-fluid"/>
-                                    <h4><span>WEB DEVELOPMENT</span></h4>
-                                </div>
+
+
+                            <div class="col-12 col-md-3">
+                                <a class="btn btn-outline-dark btn-block mad-btn btn-round" href="#">Web Design</a>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card service-card app-dev">
-                                    <img src="assets/images/d.png" class="img-fluid"/>
-                                    <h4 ><span>APP DEVELOPMENT</span></h4>
-                                </div>
+                            <div class="col-12 col-md-3">
+                                <a class="btn btn-outline-dark btn-block mad-btn btn-round" href="#">App Design</a>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <a class="btn btn-outline-dark mad-btn btn-block btn-round" href="#">Brand Identity Design</a>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <a class="btn btn-outline-dark btn-block mad-btn btn-round" href="#">Development</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
 
-
-
-            <section class="section single-service ui-single ui-ux-back"  id="single-service">
-                <div class="section-inner row">  
-                    <div class="service-content col-12">
-                        <h2>USER EXPERIENCE & INTERFACE</h2>
-                        <div>
-                            <p class="mb-5" style="line-height: 48px; font-size: 24px; max-width: 1000px;">Designing User Interfaces and User Experiences is our historical area of expertise, and remains the lifeblood of our business to this today. When it comes to web design, the two concepts are inseparable. User Experience (UX) covers usability, functionality, and navigation. Our rigorous focus in this areainvolves prototyping and testing of all possible solutions to a given problem. Then comes artistic creation (UI), which isdirected by Barthelemy. This process seeks not only to bring a visual identity to the product, but also to serve the apps underlying purpose while ensuring the best possible experience for the user.</p>
-                            <a class="btn btn-outline-light mad-btn" href="#">HIRE NOW</a>&nbsp;
-                            <a class="btn btn-outline-light mad-btn" href="#">LET'S TALK </a>
+                        <div class="mt-4 pb-5 row">
+                            <div class="col-12">
+                                <h2 class="mb-5">What's your budget?</h2>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <a class="btn btn-outline-dark btn-block mad-btn btn-round" href="#">< $15k</a>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <a class="btn btn-outline-dark btn-block mad-btn btn-round" href="#">$15k-45k</a>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <a class="btn btn-outline-dark mad-btn btn-block btn-round" href="#">$45-60k</a>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <a class="btn btn-outline-dark btn-block mad-btn btn-round" href="#">$60-100k</a>
+                            </div>
                         </div>
+
+                        <div class="mt-4 pb-5 row">
+                            <div class="col-12">
+                                <h2 class="mb-5">Project description</h2>
+                            </div>
+                            <div class="col-12 col-md-12">
+                                <textarea class="form-control mb-5" placeholder="Please Describe your project in free form"> </textarea>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mt-4 pb-5 row">
+                            <div class="col-12">
+                                <h2 class="mb-5">Tell about yourself</h2>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" class="form-control mb-5" placeholder="How Can call you?" />
+                                <input type="text" class="form-control" placeholder="What is your company name?" />
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" class="form-control mb-5" placeholder="what you last name?" />
+                                <input type="text" class="form-control" placeholder="Your contact number?" />
+                            </div>
+                        </div>
+
+
+                        <div class="mt-4 pb-5 row">
+                            <div class="col-12">
+                                <h2 class="mb-5">When would you like us to start?</h2>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <a class="btn btn-outline-dark btn-block mad-btn btn-round" href="#">ASAP</a>
+                            </div>
+                            <div class="col-12 col-md-3 ">
+                                <a class="btn btn-outline-dark btn-block mad-btn btn-round" href="#">Pretty soon</a>
+                            </div>
+                            <div class="col-12 col-md-3" >
+                                <a class="btn btn-outline-dark mad-btn btn-block btn-round" href="#">All chill & no hurry</a>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <a class="btn btn-outline-dark btn-block mad-btn btn-round" href="#">Need Discuses</a>
+                            </div>
+                            <div class="col-12 my-5">
+                                <a class="btn btn-outline-dark mad-btn " href="#">SUBMIT <img src="assets/images/right-arrow.svg" alt="#"/></a>
+                            </div>
+                        </div>
+
+
+
+
                     </div>
                 </div>
             </section>
-
-
-
         </div>
 
 
@@ -208,7 +251,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="assets/js/bootstrap.js" type="text/javascript"></script>
         <script src="assets/js/script.js" type="text/javascript"></script>
-        <script type="text/javascript" src="assets/js/fullpage.js"></script>
+        <!-- <script type="text/javascript" src="../vendors/scrolloverflow.js"></script> -->
+        <!-- <script type="text/javascript" src="assets/js/fullPage.js"></script> -->
 
 
         <script type="text/javascript">
@@ -274,8 +318,8 @@
                     $('.services').removeClass('web-dev');
 
                 });
-                
-                $('.menu-close,.menu-toggler,.side-menu-list li a').click(function(){
+
+                $('.menu-close,.menu-toggler,.side-menu-list li a').click(function () {
                     $('.main-menu').toggleClass('active');
                 });
 

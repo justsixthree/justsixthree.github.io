@@ -137,7 +137,9 @@ h1{
     line-height: 1;
 }
 .mad-btn img{
-    transform: rotate(-45deg);
+    /*transform: rotate(-45deg);*/
+    width: 20px;
+    margin-left: 10px;
 }
 .mad-btn:hover{
     border: 1px solid #e8eef5;
