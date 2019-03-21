@@ -191,7 +191,7 @@ input + small a{
 
 /*navigation*/
 .navbar{
-    background: #63b144;
+    
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -206,8 +206,8 @@ input + small a{
 }
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item.active .nav-link{
-    background: #4e9531;
-    color: #fff;
+  
+    color: #4e9531;
 }
 
 /*navigation*/
