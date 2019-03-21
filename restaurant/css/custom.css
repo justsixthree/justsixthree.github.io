@@ -190,6 +190,7 @@ input + small a{
 
 
 /*navigation*/
+
 .navbar{
     
     padding-top: 0px;
@@ -206,8 +207,14 @@ input + small a{
 }
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item.active .nav-link{
-  
-    color: #4e9531;
+  color: #4e9531 !important;
+}
+.site-header.scrolled{
+    background: #fff;
+    border-bottom: 1px solid #ececec;
+}
+.site-header.scrolled .navbar .nav-item .nav-link{
+    color: #333;
 }
 
 /*navigation*/
@@ -368,7 +375,7 @@ input + small a{
     background: rgba(99,177,68,0.6 );
     border-color: transparent;
 }
-.product-single .product-content:hover .product-title a{
+.product-single .product-content .product-title a{
     color: #fff;
 }
 /*//Product-gallery*/
@@ -405,17 +412,8 @@ input + small a{
 
 
 /*Flawless Section*/
-.testimonials{
-    padding: 0 ;
-}
-.testimonials img.img-bg{
-    min-height: 490px;
-    object-fit: cover;
-}
+
 .testimonials-content{
-    position: absolute;
-    top: 0;
-    left: 0;
     padding: 0 15px;
     display: flex;
     flex-wrap: wrap;
