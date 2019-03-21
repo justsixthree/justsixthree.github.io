@@ -247,7 +247,7 @@ input + small a{
 
 @media(max-width: 1199px){
     .navbar .nav-item .nav-link{
-        
+
         color: #333;
     }
     .site-header.fixed-top{
@@ -310,6 +310,10 @@ input + small a{
 }
 .banner-bottom h2 a{
     margin-left: 15px;
+}
+.banner-img{
+    height: 90vh;
+    object-fit: cover;
 }
 
 /*//Banner*/
@@ -519,15 +523,36 @@ input + small a{
 /*Footer*/
 footer{
     padding-top: 60px;
-
     border-top: 1px solid #dde1e1
 }
-
+footer p{
+    max-width: 300px;
+    color: #8f8f8f;
+    font-size: 14px;
+    line-height: 23px; 
+}
+.footer-title{
+    font-size: 18px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    color: #424443;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+footer ul li a{
+    color: #8f8f8f;
+    font-size: 14px;
+    line-height: 23px;
+}
+footer ul li{
+    padding: 0 0 10px; 
+}
 .social-media{
     margin-top: 40px;   
 }
 .social-item{
     display: inline-block;
+    text-align: center;
 }
 .social-item a{
     width: 30px;
@@ -545,9 +570,16 @@ footer{
     background-color: #fff;
     color: #aece89
 }
+.contact-info a{
+    font-size: 14px; 
+    font-weight: bold;
+    
+}
 .footer-bottom{
     margin-top: 30px;
     border-top: 1px solid #dde1e1;
     color: #8f8f8f;
 }
+
+
 /*//Footer*/
