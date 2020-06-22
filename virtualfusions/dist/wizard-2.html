@@ -35,6 +35,21 @@
 				background-position: calc(100% - 10px) 16px;
     			background-repeat: no-repeat;
 			}
+			.form-control[type="datetime-local"]{
+				-webkit-appearance: none;
+				appearance: none;
+				background-image: url(calendar.png);
+				background-repeat: no-repeat;
+				background-position: calc(100% - 10px) 12px;
+				background-size: 20px;
+			}
+			input[type=datetime-local]::-webkit-inner-spin-button,
+			input[type=date]::-webkit-inner-spin-button,
+			input[type=datetime-local]::-webkit-outer-spin-button,
+			input[type=date]::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			}
+
 		</style>
 	</head>
 	<!--end::Head-->
@@ -97,8 +112,8 @@
 																	</span>
 																</div>
 																<div class="wizard-label">
-																	<h3 class="wizard-title">Event</h3>
-																	<div class="wizard-desc">Add your event Details</div>
+																	<h3 class="wizard-title">Event Information</h3>
+																	<div class="wizard-desc">Add event details</div>
 																</div>
 															</div>
 														</div>
@@ -125,8 +140,8 @@
 																	</span>
 																</div>
 																<div class="wizard-label">
-																	<h3 class="wizard-title">Registration Types</h3>
-																	<div class="wizard-desc">Add registration details</div>
+																	<h3 class="wizard-title">Attendee Registration</h3>
+																	<div class="wizard-desc">Add attendee types	</div>
 																</div>
 															</div>
 														</div>
@@ -149,8 +164,8 @@
 																	</span>
 																</div>
 																<div class="wizard-label">
-																	<h3 class="wizard-title">Sessions</h3>
-																	<div class="wizard-desc">Add session details</div>
+																	<h3 class="wizard-title">Attendee Forms</h3>
+																	<div class="wizard-desc">Customize attendee forms</div>
 																</div>
 															</div>
 														</div>
@@ -188,8 +203,8 @@
 																	</span>
 																</div>
 																<div class="wizard-label">
-																	<h3 class="wizard-title">Tickets</h3>
-																	<div class="wizard-desc">Add ticket details</div>
+																	<h3 class="wizard-title">Sessions</h3>
+																	<div class="wizard-desc">Create and edit sessions</div>
 																</div>
 															</div>
 														</div>
@@ -218,8 +233,8 @@
 																	</span>
 																</div>
 																<div class="wizard-label">
-																	<h3 class="wizard-title">Registration Pages</h3>
-																	<div class="wizard-desc">Registration pages Details</div>
+																	<h3 class="wizard-title">Tickets</h3>
+																	<div class="wizard-desc">Add tickets, sponsors, coupons</div>
 																</div>
 															</div>
 														</div>
@@ -281,7 +296,7 @@
 																			<!--begin::Start TIme-->
 																			<div class="form-group">
 																				<label>Start Time</label>
-																				<input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+																				<input class="form-control form-control-solid form-control-lg" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
 																			</div>
 																			<!--end::Start Time-->
 																		</div>
@@ -290,7 +305,7 @@
 																			<!--begin::End Time-->
 																			<div class="form-group">
 																				<label>Start Time</label>
-																				<input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+																				<input class="form-control form-control-solid form-control-lg" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
 																			</div>
 																			<!--end::End time-->
 																		</div>
