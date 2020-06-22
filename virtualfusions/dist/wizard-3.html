@@ -74,7 +74,7 @@
 								<div class="card card-custom">
 									<div class="card-header">
 										<div class="card-title">
-											<h4>Creat Event</h4>
+											<h4>Create Event</h4>
 										</div>
 									</div>
 									<div class="card-body p-0">
@@ -250,52 +250,34 @@
 															<form class="form" id="kt_form">
 																<!--begin: Wizard Step 1-->
 																<div class="pb-5" data-wizard-type="step-content" data-wizard-state="current">
-																	<h4 class="mb-10 font-weight-bold text-dark">Enter Event Details</h4>
+																	<h4 class="mb-10 font-weight-bold text-dark">Enter Registration Type details:</h4>
 																	<!--begin::Input-->
 																	<div class="form-group">
-																		<label>Event Name</label>
+																		<label>Title</label>
 																		<input type="text" class="form-control form-control-solid form-control-lg" name="fname" />
 																		
 																	</div>
 																	<!--end::Input-->
-																	<!--begin::Input-->
+																	<!--begin::Textarea-->
 																	<div class="form-group">
-																		<label>Event Description</label>
+																		<label>Description</label>
 																		<textarea type="text" class="form-control form-control-solid form-control-lg" rows="3" ></textarea>
 																	</div>
+																	<!--end::Textarea-->
+
+																	<!--begin::Input-->
+																	<div class="form-group">
+																		<label>Capacity</label>
+																		<input type="text" class="form-control form-control-solid form-control-lg" name="fname" />
+																		
+																	</div>
 																	<!--end::Input-->
+
 																	<div class="row">
-																		
-																		<div class="col-12">
-																			<!--begin::Select-->
-																			<div class="form-group">
-																				<label>Event Type</label>
-																				<select name="country" class="form-control form-control-solid form-control-lg">
-																					<option>Select Event Type</option>
-																					<option>A</option>
-																					<option>B</option>
-																				</select>
-																			</div>
-																			<!--end::Select-->
-																		</div>
-																		
-																		<div class="col-12">
-																			<!--begin::Select-->
-																			<div class="form-group">
-																				<label>Event Privacy</label>
-																				<select name="country" class="form-control form-control-solid form-control-lg">
-																					<option>Select Event Privacy</option>
-																					<option>A</option>
-																					<option>B</option>
-																				</select>
-																			</div>
-																			<!--end::Select-->
-																		</div>
-																		
 																		<div class="col-12 col-lg-6">
 																			<!--begin::Start TIme-->
 																			<div class="form-group">
-																				<label>Start Time</label>
+																				<label>Registration Start Time:</label>
 																				<input class="form-control form-control-solid form-control-lg" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
 																			</div>
 																			<!--end::Start Time-->
@@ -304,7 +286,7 @@
 																		<div class="col-12 col-lg-6">
 																			<!--begin::End Time-->
 																			<div class="form-group">
-																				<label>Start Time</label>
+																				<label>Registration End Time:</label>
 																				<input class="form-control form-control-solid form-control-lg" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
 																			</div>
 																			<!--end::End time-->
@@ -313,11 +295,6 @@
 																	</div>
 																</div>
 																<!--end: Wizard Step 1-->
-																
-																
-																
-																
-																
 																<!--begin: Wizard Actions-->
 																<div class="d-flex justify-content-between border-top mt-5 pt-10">
 																	<div class="mr-2">
@@ -331,6 +308,37 @@
 																</div>
 																<!--end: Wizard Actions-->
 															</form>
+														</div>
+
+														<div class="col-12">
+															<div class=" border-top mt-10 pt-10">
+																<h4 class="mb-10 font-weight-bold text-dark">Enter Registration Type details:</h4>
+															</div>
+
+															<div class="card card-border">
+																<div class="card-header">
+																	<div class="row">
+																		<div class="col-12 col"><span>Type : </span> Type Test</div>
+																		<div class="col-12 col"><span>Capacity : </span> 20</div>
+																		<div class="col-12 col"><span>Start Time : </span> 05:00 PM</div>
+																		<div class="col-12 col"><span>End Time : </span> 06:00 PM</div>
+																	</div>
+																	<div class="card-toolbar">
+																		<a href="#" class="btn btn-xs btn-icon btn-danger mr-2">
+																			<i class="flaticon2-drop"></i>
+																		</a>
+																		<a href="#" class="btn btn-xs btn-icon btn-success mr-2">
+																			<i class="flaticon2-gear"></i>
+																		</a>
+																		<a href="#" class="btn btn-xs btn-icon btn-primary">
+																			<i class="flaticon2-bell-2"></i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+															
+
+
 														</div>
 														<!--end: Wizard-->
 													</div>
